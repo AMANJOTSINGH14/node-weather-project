@@ -28,7 +28,7 @@ header{
     margin-top: 16px;
     margin-bottom: 48px;
 }
-header a{
+.q ,header a{
     color: grey;
     margin-right: 15px;
     text-decoration: none;

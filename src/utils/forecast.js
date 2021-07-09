@@ -9,7 +9,8 @@ const forecast = (latitude, longitude,callback) => {
       callback("unable to find location of weather service", undefined);
     } else {
       callback(undefined, 
-       'Weather is '+ response.body.current.weather_descriptions[0 ]+ ' . The temperature is: '+response.body.current.temperature+" .But it feels like: "+response.body.current.feelslike
+        
+       'Weather is '+ response.body.current.weather_descriptions[0]+ ' . The temperature is: '+response.body.current.temperature+" .But it feels like: "+ response.body.current.feelslike + ' . The humidity is '+response.body.current.humidity+'%'
       );
     }
   });
