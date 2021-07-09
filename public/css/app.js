@@ -8,10 +8,10 @@ const locationss=search.value;
 
 One.textContent='Loading...... Please Wait!!'
 
-fetch('http://localhost:3000/weather?address='+locationss).then((resonse)=>{
+fetch('/weather?address='+locationss).then((resonse)=>{
 resonse.json().then((data)=>{
     if(data.error){
-        console.log(data.error)
+        
         One.textContent=data.error;
     }
     else{
