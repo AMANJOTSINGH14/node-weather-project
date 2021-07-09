@@ -24,7 +24,7 @@ app.get('',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'FOR ANY ISSUE. EMAIL AT : weather@7226yahoo.com',
-        name:"ruk aaya"
+       
     })
 })
 
