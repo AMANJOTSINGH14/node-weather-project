@@ -71,6 +71,6 @@ app.get('*',(req,res)=>{
         errorMessage:'PAGE DONT WORK'
     })
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server on  3000')
 })
